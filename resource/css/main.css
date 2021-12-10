@@ -1,0 +1,50 @@
+*{
+    font-family: 'Calibri';
+    font-size:12pt !important;
+    /*font-weight: 600;*/
+}
+
+body{
+ margin: 0;
+}
+.page-logo img{
+    margin: 0 !important;
+}
+.page-content{
+    padding: 0 !important;
+}
+
+#main_page{
+    width: 100%;
+    min-height: 400px;
+}
+.topright{
+    padding-left: 10px !important;
+    width: 40px;
+    height: 45px;
+}
+.topright:hover{
+    background: #3f4f62 !important;
+}
+
+
+.mymenu-add{
+    background: #1caf9a !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.scroller{
+    overflow-y : scroll;
+}
+
+::-webkit-scrollbar{
+    background: rgba(0, 0, 0,0.2);
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+

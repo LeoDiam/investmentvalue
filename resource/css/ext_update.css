@@ -1,0 +1,209 @@
+
+*{
+    font-family: 'Calibri' !important;
+}
+
+.x-tab-active .x-tab-inner-default{
+  color: red !important;
+}
+
+.x-grid-item-selected 
+{
+  background: #ccc !important;
+  /*font-weight: bold;*/
+}
+
+.x-title-text.x-title-text-default.x-title-item,
+.x-tab-button.x-tab-button-default.x-tab-text.x-tab-button-center{
+  font-family: 'Calibri' !important;
+  height: 20px !important;
+  font-size:15pt !important;
+}
+
+.x-title-text.x-page-title-default
+{
+    font-family: 'Calibri' !important;
+    height:50px;
+    font-size:20pt !important;
+    font-weight: bolder;
+    padding-top: 5px;
+    color:blue !important;
+}
+
+.x-title-text.x-page-subtitle-default
+{
+    font-family: 'Calibri' !important;
+    height:50px;
+    font-size:15pt !important;
+    font-weight: bolder;
+}
+
+.title-form{
+    background: #dddbdb;
+    border: 0;
+    align-self: center;
+}
+
+.x-form-text-default{
+  font-family: 'Calibri' !important;
+  font-size:12pt !important;
+}
+
+.x-tab-inner-default{
+  font-family: 'Calibri' !important;
+  font-size:10pt !important;
+}
+
+.icon-limit
+{
+    margin-top: 7px;
+    background:url(../image/icons/power1.png) no-repeat;
+}
+
+.icon-real
+{
+    margin-top: 7px;
+    background:url(../image/icons/power2.png) no-repeat;
+}
+
+.icon-save{
+    background:url(../image/icons/save.gif) no-repeat;
+}
+.icon-add{
+    background:url(../image/icons/add.png) no-repeat;
+}
+.icon-cancel{
+    background:url(../image/icons/cancel.gif) no-repeat;
+}
+.icon-update{
+    background:url(../image/icons/update.png) no-repeat;
+}
+.icon-delete{
+    background:url(../image/icons/delete.png) no-repeat;
+}
+.icon-search{
+    background:url(../image/icons/search.png) no-repeat;
+}
+.icon-accept{
+    background:url(../image/icons/accept.png) no-repeat;
+}
+.icon-printer{
+    background:url(../image/icons/printer.png) no-repeat;
+}
+.icon-excel{
+    background:url(../image/icons/excel.png) no-repeat;
+}
+
+.icon-calc{
+    background:url(../image/icons/calc.png) no-repeat;
+}
+.icon-submit{
+    background:url(../image/icons/submit.png) no-repeat;
+}
+.icon-recovery{
+    background:url(../image/icons/recovery.png) no-repeat;
+}
+.icon-refresh{
+    background:url(../image/icons/refresh.gif) no-repeat;
+}
+.icon-insert{
+    background:url(../image/icons/insert.png) no-repeat;
+}
+.icon-treat{
+    background:url(../image/icons/treat.png) no-repeat;
+}
+
+.icon-man{
+    background:url(../image/icons/man.png) no-repeat;
+}
+
+.icon-yes{
+    background:url(../image/icons/yes.png) no-repeat;
+}
+
+.x-action-col-cell img.modify {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/refresh.gif);
+        }
+.x-action-col-cell img.delete {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/delete.png);
+        }
+.x-action-col-cell img.search {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/search.png);
+        }
+.x-action-col-cell img.video {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/video.png);
+        }
+.x-action-col-cell img.up {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/up.png);
+        }
+.x-action-col-cell img.down {
+            height: 16px;
+            width: 16px;
+            background-image: url(../image/icons/down.png);
+        }
+
+.gridCls1{
+    background: rgba(0,112,240,0.4);
+}
+.gridCls2{
+    background: rgba(240,0,112,0.4)
+}
+.gridCls3{
+    background: rgba(240,240,0,0.4);
+}
+.gridCls4{
+    background: rgba(240,0,240,0.4);
+}
+.gridCls5{
+    background: rgba(0,240,112,0.4);
+}
+.gridCls6{
+    background: rgba(0,240,240,0.4);
+}
+.gridCls7{
+    background: rgba(240,240,120,0.4);
+}
+.gridCls8{
+    background: rgba(240,120,240,0.4);
+}
+.gridCls9{
+    background: rgba(120,240,112,0.4);
+}
+.gridCls10{
+    background: rgba(120,240,240,0.4);
+}
+
+.gridCls-red{
+    background: rgba(255,0,0,0.1);
+}
+.gridCls-green{
+    background: rgba(0,255,0,0.1);
+}
+.gridCls-blue{
+    background: rgba(0,0,255,0.1);
+}
+.gridCls-yellow{
+    background: rgba(255,255,0,0.1);
+}
+
+.x-toast-msg{
+  border-color: #bcb1b0;
+  border-width: 1px;
+  border-style: none !important;
+  background: #e0e0e0;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: tahoma,arial,verdana,sans-serif;
+}
+

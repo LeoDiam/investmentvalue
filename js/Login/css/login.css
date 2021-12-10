@@ -1,0 +1,81 @@
+/***
+Login page
+***/
+/* logo page */
+*, h3{ font-family: 'Calibri '; }
+*{
+  font-size: 12pt;
+}
+a{
+  color: white;
+}
+
+.login { background-color: #666 !important;}
+
+.login .content {
+  width: 360px;
+  margin: auto;
+  margin-top: 200px; 
+  padding: 30px;
+  padding-top: 0px;
+  background: url(../image/loginForm.png) repeat;
+  padding-bottom: 15px;
+  border-radius: 17px;
+  border-style: groove;
+}
+
+.login .content h3 { text-align: center;  color: #eee;  font-weight: bold;}
+
+.login .content .login-form{ padding: 0px; margin: 0px; }
+
+.login .content .register-form { display: none; }
+
+.login .content .form-title { font-weight: 300; margin-bottom: 25px; }
+
+.login .content .form-actions {
+  background-color: transparent;
+  clear: both;
+  border: 0px;
+  padding: 0px 30px 25px 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+
+.login .content .form-actions .btn {
+  margin-top: 1px;
+}
+
+.login .content .create-account {
+  border-top: 1px dotted #eee;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  .login .logo {   margin-top: 10px;  }
+  .login .content {    padding: 30px;    width: 222px;  }
+  .login .content h3 {    font-size: 22px;  }
+  .login .checkbox {    font-size: 13px;  }
+}
+
+.form-title{
+  text-align: center;
+}
+
+
+#modal1{
+  z-index: 9999;
+}
+
+.modal-dialog{
+  width: 400px;
+  margin-top: 100px;
+}
+.modal-body{
+  margin-top: 20px;
+}
+.modal-footer{
+  margin: 0;
+  padding: 3px 15px 3px 15px;
+}

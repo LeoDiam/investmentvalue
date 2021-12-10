@@ -1,0 +1,8 @@
+.row{
+  margin-right: 0px !important;
+}
+.x-grid-item-selected 
+{
+  background: #ccc !important;
+  font-weight: bold;
+}

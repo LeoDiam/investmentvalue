@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link href="../img_i/TechIns.png" rel="icon">
+    <link href="../img_i/TechIns.png" rel="apple-touch-icon">
+    <title>Υπολογισμός Πληθωρισμου</title>
+    <link rel="stylesheet" href="../css_allinone_i/styles.css">
+    <link rel="stylesheet" href="../css_allinone_i/bootstrap.css">
+    <link rel="stylesheet" href="../css_ergaleia_i/platform.css">
+</head>
+<body>
+<nav class="navbar bg-light" style="min-height: 50px;padding: 0px;background-color: grey!important;">
+    <a href="#">
+        <img src="../img_i/TechIns.png" alt="Logo" style="width:40px;">
+    </a>
+    <button style="background-color: whitesmoke;border-radius: 10px" id="investProfile" class="navbar-brand">
+        <a style="text-decoration: none;color: black" href="../ependytiko_i">
+            Επενδυτικό Προφίλ
+        </a>
+    </button>
+    <button style="background-color: whitesmoke;border-radius: 10px" id="invest" class="navbar-brand">
+        <a style="text-decoration: none;color: black" href="../investment/index.html">
+            -Επένδυση Κεφαλαίου-
+        </a>
+    </button>
+    <button style="background-color: whitesmoke;border-radius: 10px" id="inflation" class="navbar-brand">
+        <a style="text-decoration: none;color: black" href="../index.php">
+            -Υπολογισμός Αποταμίευσης-
+        </a>
+    </button>
+</nav>
+<div>
+</div>
+<div class="wrapper">
+    <div class="title">
+        Υπολογισμος Πληθωρισμου
+    </div>
+    <div class="form">
+        <div class="inputfield" hidden>
+            <label hidden>Ηλικία</label>
+            <input value="0" type="text" id="age" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label hidden>Μέσος Όρος Μηνιαίου Εισοδήματος</label>
+            <input value="0" type="text" id="averageIncome" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label hidden>Χρόνια Εργασίας μέχρι σήμερα</label>
+            <input value="0" type="text" id="workyearsuntilnow" class="input" hidden>
+        </div>
+        <div class="inputfield d-flex flex-column">
+            <label>Χρόνια Πληθωρισμού</label>
+            <input type="text" id="workyearsuntilpension" class="input">
+        </div>
+        <div class="inputfield" hidden>
+            <label>Συντελεστής Αναπλήρωσης</label hidden>
+            <input value="0" type="text" id="syntelanapl" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Ανταποδοτική Σύνταξη</label hidden>
+            <input value="0" type="text" id="initpension" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Εθνική Σύνταξη</label hidden>
+            <input value="0" type="text" id="nationalpension" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Συνολική Μηνιαία Σύνταξη (Καθαρά)
+            </label hidden>
+            <input value="0" type="text" id="totalpension" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Επιθυμητό σύνολο Κρατικής και Ιδιωτικής Σύνταξης</label hidden>
+            <input value="0" type="text" id="wantedpension" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Απαιτούμενη Ιδιωτική Σύνταξη</label hidden>
+            <input value="0" type="text" id="neededprivatepension" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label>Επιθυμητό Κεφάλαιο</label hidden>
+            <input value="0" type="text" id="neededcapitaluntil85" class="input" hidden>
+        </div>
+        <div class="inputfield" hidden>
+            <label> Αρχικό Ποσό Μηνιαίας Επένδυσης</label hidden>
+            <input value="0" type="text" id="neededinitialmonthlyinvestment" class="input" hidden>
+        </div>
+        <div class="inputfield d-flex flex-column" hidden>
+            <label hidden> Αρχική Μηνιαία Επένδυση</label>
+            <input type="text" id="initialmonthlyinvestment" class="input" hidden>
+        </div>
+        <div class="inputfield d-flex flex-column">
+            <label> Χρηματικό ποσό</label>
+            <input type="text" id="initialcapital" class="input">
+        </div>
+        <div class="inputfield d-flex flex-column">
+            <label> Πληθωρισμός </label>
+            <input type="text" id="anualperformance" class="input">
+        </div>
+        <div class="inputfield d-flex flex-column" hidden>
+            <label hidden> Ετήσια Αναπροσαρμογή (%) </label>
+            <input type="text" id="anualadjustment" class="input" hidden>
+        </div>
+        <div class="inputfield d-flex flex-column">
+            <label> Μελλοντική Αξία Χρημάτων</label>
+            <input type="text" id="endingvalue" class="input">
+        </div>
+        <div class="inputfield" hidden>
+            <label> Ενδεικτική Μηνιαία Σύνταξη στη Λήξη </label hidden>
+            <input type="text" id="endingvaluepermonth" class="input" hidden>
+        </div>
+    </div>
+</div>
+
+<div id="xrimatistirio" class="display_none">
+    <div class="container">
+        <div hidden class="row">
+            <div style="padding: 15px;text-align: right" class="col-6">
+                <h5 class="text-black-50 me-2">Αρχικό Ποσό Ετήσιας Επένδυσης: </h5>
+            </div>
+            <div style="padding: 15px" class="col-6">
+                <input id="amount" class="form-control;" type="number" min="50" step="50"
+                       onfocus=" let value = this.value; this.value = null; this.value=value">
+            </div>
+            <div style="padding: 15px;text-align: right" class="col-6">
+                <h5 class="text-black-50 me-2">Αναπροσαρμογή: </h5>
+            </div>
+            <div style="padding: 15px" class="col-6">
+                <input id="anaprosarmogi" class="form-control;" type="number" min="0" max="6" step="3"
+                       onfocus=" let value = this.value; this.value = null; this.value=value">
+            </div>
+            <div style="padding: 15px;text-align: right" class="col-6">
+                <h5 class="text-black-50 me-2">Χρονιά Επένδυσης: </h5>
+            </div>
+            <div style="padding: 15px" class="col-6">
+                <input id="yearStartInvest" class="form-control;" type="number" min="1998" max="2020" step="1"
+                       onfocus=" let value = this.value; this.value = null; this.value=value">
+            </div>
+            <div style="min-height: 15px" class="col-12"></div>
+            <h3 id="ypologise" style="color: black;border: solid 2px white;cursor: pointer" class="text-center">
+                <span style="background-color: whitesmoke;padding: 10px">Υπολόγισε</span></h3>
+        </div>
+        <br>
+    </div>
+    <!--            CAREFUL names of h5 elements to be same with markets_info objects names -->
+</div>
+<script src="../js_ergaleia_i/markets_info.js"></script>
+<script type="text/javascript" src="../js_ergaleia_i/jquery-3.6.0.min.js"></script>
+<script defer src="../js_ergaleia_i/pension-allMarkets.js"></script>
+</body>
+</html>
